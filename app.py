@@ -5,6 +5,7 @@ from sections.experiences import experiences_section
 from sections.formation import formation_section
 from sections.header import header_section
 from sections.langues import langues_section
+from sections.like import like_section
 from sections.projets import projets_section
 
 langue = st.sidebar.selectbox("🌐 Language / Langue", ["Français", "English"])
@@ -73,4 +74,9 @@ else:
             file_name="DucHuyNguyen_Resume_Developer_IT.pdf",
             mime="application/pdf"
         )
+
+
+with st.sidebar:
+    st.markdown("---")
+    like_section(langue)
 
