@@ -18,23 +18,6 @@ def circle_crop_image(image_path, output_size=(200, 200)):
     img.putalpha(mask)
     return img
 
-
-# def header_section():
-#     # Utilisation de colonnes pour mettre côte à côte la photo et les infos
-#     col1, col2 = st.columns([1, 3])
-#     with col1:
-#         circular_img = circle_crop_image("assets/profile.jpeg")  # Chemin vers ton image
-#         st.image(circular_img, use_container_width=False)
-#     with col2:
-#         st.title("Duc Huy Nguyen")
-#         st.subheader("Data Engineer / Backend Developer")
-#         st.markdown("""
-#         **📞 :** (+41) 078 854 13 68
-#         **✉️ :** duchuy.nguyendasci@gmail.com
-#         **📍 :** Rue du Léman 2, 1815 Clarens
-#         """)
-#     st.markdown("---")
-
 def header_section(langue="Français"):
     # Colonne image / infos
     col1, col2 = st.columns([1, 3])

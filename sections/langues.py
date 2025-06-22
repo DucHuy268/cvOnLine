@@ -1,18 +1,6 @@
 import streamlit as st
 
 # Section Langue
-# def langues_section():
-#     st.header("LANGUES")
-#
-#     st.markdown("""
-#
-#     | Langue       | Niveau                 | Détail                      |
-#     |--------------|------------------------|-----------------------------|
-#     | Vietnamien   | Langue maternelle      | Communication fluide        |
-#     | Français     | C1 – Courant           | Utilisation quotidienne     |
-#     | Anglais      | B2 – Professionnel     | Présentations et rédaction  |
-#     """)
-
 def langues_section(langue="Français"):
     if langue == "Français":
         st.header("🌐 LANGUES")

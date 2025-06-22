@@ -2,33 +2,6 @@ import streamlit as st
 
 
 # Section Compétences
-# def competences_section():
-#     st.header("COMPÉTENCES")
-#
-#     st.subheader("Intelligence Artificielle & Data")
-#     st.markdown("""
-#     - Machine Learning & Deep Learning
-#     - Computer Vision & LLM
-#     - Traitement de l'image & de texte
-#     - Prompt Engineering, Data Mining
-#     """)
-#
-#     st.subheader("Développement")
-#     st.markdown("""
-#     - Python, Java, JavaScript, C++
-#     - Vue.js & Node.js
-#     - SQL, NoSQL, Spark, PL/SQL Oracle
-#     - Spring, Spring Boot, RESTful APIs
-#     - Linux (ligne de commande)
-#     """)
-#
-#     st.subheader("DevOps & Cloud")
-#     st.markdown("""
-#     - Git, Docker, Kubernetes
-#     - DevOps & MLOps, Micro-Services
-#     - CI/CD
-#     """)
-
 def competences_section(langue="Français"):
     if langue == "Français":
         st.header("🧠 COMPÉTENCES")

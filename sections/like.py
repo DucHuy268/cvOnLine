@@ -4,6 +4,7 @@ import os
 
 LIKES_FILE = "likes.json"
 
+
 def load_likes():
     if os.path.exists(LIKES_FILE):
         with open(LIKES_FILE, "r") as f:
@@ -11,9 +12,11 @@ def load_likes():
             return data.get("likes", 0)
     return 0
 
+
 def save_likes(count):
     with open(LIKES_FILE, "w") as f:
         json.dump({"likes": count}, f)
+
 
 def like_section(langue="Français"):
     likes = load_likes()
