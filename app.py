@@ -8,6 +8,17 @@ from sections.langues import langues_section
 from sections.like import like_section
 from sections.projets import projets_section
 
+# Sidebar visibility toggle
+st.session_state.get('show_sidebar', True)
+
+st.set_page_config(
+    page_title="Duc Huy Nguyen CV",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+
 langue = st.sidebar.selectbox("🌐 Language / Langue", ["Français", "English"])
 
 if langue == "Français":
